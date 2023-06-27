@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SUCCESS PAGE</title>
+</head>
+<body>
+<p> YOUR DETAILS ARE: </p><br><br>
+{% block content %}
+<!--<table border="1">-->
+<!--{% for key,value in formdata.items() %}-->
+<!--    <tr>-->
+<!--        <th>{{key}}</th>-->
+
+<!--        <td>{{value}}</td>-->
+
+<!--    </tr>-->
+<!--{% endfor %}-->
+<!--</table>-->
+
+{% for key,value in formdata.items() %}
+
+    {% if key == "username" %}
+          <p>{{value}}</p>
+    {% elif key == "password" %}
+          <p>{{value}}</p>
+
+    {% endif %}
+
+{% endfor %}
+
+{% endblock %}
+
+<p> THANK YOU FOR STOPPING BY!!!!</p>
+
+</body>
+</html>
