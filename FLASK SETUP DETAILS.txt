@@ -1,0 +1,54 @@
+Install Sublime Text
+----------------------------
+Double-click the setup file and follow instructions
+
+Create new folder "FlaskClasses" in C:/Users/YourName/PyCharmProjects
+Open this folder in your command prompt
+On terminal/command prompt, navigate to FlaskClasses
+
+Virtual environment
+-----------------------------
+Pip install the virtual environment module "virtualenv"
+Enter "pip"/"pip3" on Windows/Mac command  --- pip install virtualenv
+
+Create the Virtual environment
+--------------------------------------------
+Enter command   ----- virtualenv venv   (Mac)
+Enter command  ------ python  -m  venv  "venv"
+We use "venv" as the name for the virtual environment
+
+Activate Virtual environment
+---------------------------------------------------
+1. Navigate to FlaskClasses Folder (cd C:/Users/YourName/PyCharmProjects/FlaskClasses)
+
+2. Activate using the steps below: 
+To activate (on Mac) --- source venv/bin/activate
+To activate (on Windows) --- cd venv/Scripts folder, then .\activate.bat or activate.bat
+
+
+Installing requirements / dependencies
+-----------------------------------------------------
+Dependencies: flask, flask-sqlalchemy, flask-cors, flask-wtf
+
+pip install flask flask-sqlalchemy(Windows)  
+pip3 install flask flask-sqlalchemy(Mac)	          
+
+pip install flask-cors flask-wtf(Windows)
+pip3 install flask-cors flask-wtf(Mac)
+
+Setup Flask applications
+-------------------------------------
+Create 2 folders 
+templates  - for your html files
+static - for your css, javascript and image files
+
+Names of folders and subfolders
+1. templates
+2. static 
+      - css
+      - js
+      - img
+
+
+Do all these and move the example files (example_1.json & example_2.json) into your Flask Classes project
+

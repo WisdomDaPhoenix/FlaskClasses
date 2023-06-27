@@ -1,0 +1,88 @@
+import json
+import pandas as pd
+hobbies = []
+f = open("userdetails.txt","w")
+name = input("Enter your name: ")
+age = eval(input("Enter  age: "))
+f.write(f"{name} \n {age} \n")
+
+for i in range(3):
+      hobby = input("Enter a hobby: ")
+      hobbies.append(hobby)
+      f.write(f"{hobby} \n")
+
+f.close()
+print("User file created! ")
+
+
+d = {
+     "Name" : name,
+     "Age" : age,
+    "Hobbies": hobbies
+  }
+
+with open("userdetails.json","w") as file:
+         json.dump(d, file, ensure_ascii=False)      
+
+print("JSON User file created! ")
+
+
+with open("userdetails.json","r") as file:
+         content =  json.load(file)
+
+
+htable = pd.DataFrame({
+                "Serial No" :  [i for i in range(1,4)],
+                "Hobbies" :  content["Hobbies"]
+                  })
+
+print(htable)
+
+----------------------------------------------------------------------------------------------
+import json
+from pprint import pprint
+import pandas as pd
+
+user = input("Hello and welcome to the quiz, enter your name: ").title()
+with open("example_2.json", "r") as file:
+    content = json.load(file)
+# print(content)
+categories = [key for key in content["quiz"]]
+qcodes = ["q1", "q2"]
+
+pts = 0
+for category in categories:
+    for q in qcodes:
+        if q not in content["quiz"][category]:
+            continue
+        else:
+            qcode_content = content["quiz"][category][q]
+            if qcode_content:
+                selections = pd.DataFrame({
+                    " ": [str(i) + "." for i in range(1, 5)],
+                    "": content["quiz"][category][q]["options"]
+                })
+
+                selections.set_index(" ",inplace=True)
+                print("--------Multi-choice Answers-------")
+                print(selections, 3 * "\n")
+                answer = input(content["quiz"][category][q]["question"] + " :").title()
+                correct_ans = content["quiz"][category][q]["answer"]
+                print(2 * "\n")
+                if answer == correct_ans:
+                    pts += 1
+                    print("Correct Answer! Number of points won: ", pts)
+                else:
+                    print("Incorrect! Number of points won: ", pts)
+                print(2 * "\n") 
+
+print("Hello " + user + "your total points are " + str(pts))
+print()
+print("Thank you for participating in our quiz")
+
+
+
+
+
+
+

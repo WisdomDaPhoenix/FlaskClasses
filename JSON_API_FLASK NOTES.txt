@@ -1,0 +1,242 @@
+
+-----------------GENERAL  FLASK APPLICATION STRUCTURE------------------
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return 'Hello World’
+
+
+if __name__ == '__main__':
+      app.run()
+
+
+
+
+
+
+
+
+
+
+@Datron24
+
++2348140716127
+
+
+
+-----------------------------JSON------------------------------------------------------------
+
+# COMPANIES STORE BACK-END INFORMATION SOME OF WHICH
+# CAN BE ACCESSED AS JSON OBJECTS
+
+# A JSON OBJECT (JAVASCRIPT OBJECT NOTATION) IS A STRUCTURED
+# FORM OF DATA WHICH ALLOWS PROGRAMMERS TO ACCESS DATA # FOR  THEIR APPLICATIONS
+
+Download example_1.json and example_2.json files.
+
+Write a program that reads questions (1 to 3), one at a time from the  "example_2.json" file and their answer options, displaying them to the user and requesting for an answer.
+If the user guesses correctly or wrongly, let them know. Each questions answered correctly should carry one point.
+
+
+
+
+
+
+------------------------------APIs----------------------------------
+
+
+
+# THINK OF APIs AS MESSENGERS
+
+API ENDPOINT IS ANY CUSTOM URL GIVEN WHICH LINKS US TO JSON DATA.
+
+THEY ARE USUALLY MADE PUBLICLY AVAILABLE TO PROGRAMMERS WHO
+REQUIRE JSON INFORMATION OR DATA
+
+e.g http://demo.codingnomads.co:8080/tasks_api/users
+
+WE CAN QUERY API ENDPOINTS(MAKE API CALLS/REQUESTS) AND GET INFORMATION
+
+A STATUS CODE(200) AND STATUS MESSAGE TELLS US IF OUR REQUEST/API CALL WAS SUCCESSFUL
+
+JSON IS GENERALLY USED IN BACK-END PROGRAMMING
+
+WE USE THE REQUESTS MODULE TO REQUEST FOR ANY WEBPAGE OR URL
+IN PYTHON
+
+IN THE URL  "https://swapi.dev/api/vehicles", THE ROOT API is 'https://swapi.dev/api/' WHILE THE ENDPOINT  IS  '/vehicles' .
+
+
+EXPLORING THE HOLIDAY API (abstractapi)
+
+TASK 
+
+Write python code that returns the holiday information for June 12, 2023. Your code should query/make api calls to:
+
+
+https://holidays.abstractapi.com/v1/api_key={mykey}&country=NG&year=2023&month=06&day=12
+
+where mykey is your own api key
+
+
+SOLUTION
+
+mykey = "3daba2491af04006afbffdc5cea89397"
+country_code = input("Enter country code: ")
+year = eval(input("Enter year: "))
+month = eval(input("Enter month: "))
+day =...
+import requests
+
+url = f"https://holidays.abstractapi.com/v1/?api_key={mykey}&country={country_code}&year={year}&month={month}&day={day}"
+
+response = requests.get(url)
+
+data = response.json()
+
+print(data[0]["name"])
+
+
+
+
+
+
+#print(response.status_code)
+
+
+
+API: https://swapi.dev/api/
+ENDPOINTS: planets, starships
+
+1. With the help of a list comprehension, return a list of:
+a. The names of all starships in the starwars api 
+b. The names of all planets in the starwars api
+
+2. Generate/Return a dictionary of all planets and their population
+
+import requests
+
+SOLUTION
+url = "https://swapi.dev/api/"
+def fetch_api_data(endpoint):
+       myapi = url + endpoint
+       response = requests.get(myapi)
+       content = response.json()
+       return content
+
+myplanetsdata = fetch_api_data("planets")
+mystarshipsdata = fetch_api_data("starships")
+
+planets = [x['name'] for x in myplanetsdata["results"]]
+starships = [x['name'] for x in mystarshipsdata["results"]]
+
+print("List of planets: ", planets)
+print('------------------------------------------------------------------------------------------------------------------')
+print("List of starships: ", starships)
+
+d = {x["name"] : x["population"] for x in myplanetsdata["results"] }
+print(d)
+
+
+
+HOW TO POST DATA TO AN API
+
+# -----------  POSTING DATA TO AN API ----------------------------------
+import requests
+url = "http://demo.codingnomads.co:8080/tasks_api/users"
+
+mydata = {
+   "first_name" : "derin",
+     "last_name": "bamidele",
+      "email":  "aderinsolabamidele1@gmail.com"
+      }
+
+
+response = requests.post(url, json=mydata)
+
+print(response.status_code)
+if response.status_code == 201:
+    print("Data added!")
+
+#-------DELETE REQUESTS------------------
+response = requests.delete(url, json= data)
+
+where data is some json data you wish to delete
+
+
+
+
+
+
+
+import requests
+from pprint import pprint
+
+url = "http://demo.codingnomads.co:8080/tasks_api/users"
+
+response = requests.get(url)
+users = response.json()    # Converts response to dictionary
+print(f"Status code: {response.status_code}")
+print(users["data"][0])
+# Extract kabir's email and lastname
+
+
+Generate a dictionary of the ids(keys) and emails(values) of all the users.
+Generate a dictionary of the firstnames(keys) and emails(values) of all the users.
+
+METHOD 1
+# Create a list of all ids, and all emails. Zip both lists into a dictionary.
+
+
+ids = [item["id"] for item in users["data"] ]
+emails = [item["email"] for item in users["data"] ]
+firstnames = [item["first_name"] for item in users["data"]]
+
+data1 = dict(zip(ids, emails))
+data2 = dict(zip(firstnames, emails))
+print(data1)
+print(data2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+import json
+from pprint import pprint
+import pandas as pd
+
+user = input("Hello and welcome to the quiz, enter your name: ").title()
+with open("example_2.json", "r") as file:
+    content = json.load(file)
+# print(content)
+categories = [key for key in content["quiz"]]
+qcodes = ["q1", "q2"]
+
+pts = 0
+for category in categories:
+    for q in qcodes:
+        if q not in content["quiz"][category]:
+            continue
+        else:
+            qcode_content = content["quiz"][category][q]
+            if qcode_content:
+                selections = pd.DataFrame({
+                    " ": [str(i) + "." for i in range(1, 5)],
+                    "": content["quiz"][category][q]["options"]
+                })
+
+                selections.set_index(" ",inplace=True)
+                print("--------Multi-choice Answers-------")
+                print(selections, 3 * "\n")
+                answer = input(content["quiz"][category][q]["question"] + " :").title()
+                correct_ans = content["quiz"][category][q]["answer"]
+                print(2 * "\n")
+                if answer == correct_ans:
+                    pts += 1
+                    print("Correct Answer! Number of points won: ", pts)
+                else:
+                    print("Incorrect! Number of points won: ", pts)
+                print(2 * "\n") 
+
+print("Hello " + user + "your total points are " + str(pts))
+print()
+print("Thank you for participating in our quiz")

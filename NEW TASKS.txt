@@ -1,0 +1,85 @@
+TASK
+Create a temps.txt file with different temperatures in celsius. Your file's content should look like so:
+
+20
+40
+60
+80
+100
+
+Save the temps.txt file with these temperatures and answer the following questions below.
+
+SOLUTION
+
+with open('temps.txt','w') as file:
+   t = [n * 10 for n in range(2,11,2)]
+   for item in t:
+          file.write(f"{item} \n")
+
+ 
+conversions = []       
+with open("ftemps","w") as file: 
+     temperatures = [int(x.strip()) for x in open("temps.txt")]
+     for t in temperatures:
+            fval = 9/5 * t + 32 
+            conversions.append(fval)
+            file.write(f"{ fval } \n")
+     
+print(conversions)
+
+data = { "Conversion" : conversions }
+
+
+conversions = json.dumps(data, enable_ascii=False)   # JSON STRING
+print(type(conversions))
+
+with open("conversions.json", "w") as file:         # JSON FILE
+       json.dump(data, enable_ascii=False)
+
+
+with open("conversions.json","r") as file:
+        mycontent = json.load(file)
+
+print(mycontent)
+
+
+QUESTIONS:
+a) Write python code to read the temps file, convert each temperature to fahrenheit and store the conversions in a new file called ftemps.txt
+
+b) Write python code to store the conversions(fahrenheit values) in a list.
+
+c) Generate a json string of these conversions called "conversions" and test to reaffirm that it is a string.
+
+d) Generate a json file of these conversions called "conversions.json"
+
+e) Write code to display the content of "conversions.json".
+
+I am writing to express my interest in the Research and Development Specialist position at the University. My background is in Computer Science. Areas of proficiency include, python, front-end development, cybersecurity with other skills and related information stated on my resume I believe that my experience and skill set make me the ideal candidate for this role. I have worked briefly within a University environment as a part-time teaching assistant, teaching and preparing students in Computer Science related courses.
+
+My passion for delivering successful outcomes makes me confident that I can add value to your team.
+
+With my proven track record of delivering results and exceeding expectations, I firmly believe that I can contribute significantly to your organization's growth. 
+
+I would love the opportunity to discuss further how I can contribute effectively at the Digital Technologies for Cognitive Science Research at the University of Luxembourg. I am available via email or through phone so we can schedule a meeting or a call at your convenience.
+
+WISDOM .E
+
+
+
+
+
+
+
+
+TASK
+1. Write a program that collects user information, their name, age and three different hobbies they have and does the following below:
+a. Stores the information provided in a text file called "userdetails.txt".
+
+b. Writes their hobbies in a python list and generates a JSON file of all the user's details(name, age, hobbies) for the user. JSON file's name should be called "userdetails.json"
+
+c. Reads the hobbies alone for the user from the json file and outputs the information in tabular form with having 2 different columns - Serial Number,  Hobbies.
+
+(SEE NEW TASKS SOLUTIONS FILES)
+
+
+
