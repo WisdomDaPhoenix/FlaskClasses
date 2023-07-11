@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<center>
+
+<p>YOUR MOVIE: {{ usermovie }}</p><br><br>
+
+<p>YOUR AGE: {{ userage }}</p>
+
+{% if userage < 18 %}
+
+<p>You are not eligible to watch this movie!</p>
+
+{% else %}
+
+<p>Eligible!</p>
+
+{% endif %}
+
+</center>
+
+{% endblock %}
+
+
+
+
+
+
+
+

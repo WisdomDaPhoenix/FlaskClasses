@@ -1,0 +1,17 @@
+!-- {% extends "base.html" %}
+
+{% block content %}	
+	
+<center>
+	<form action="{{ url_for('quote') }}" method="post">
+		<h4>AUTHOR OF QUOTE: </h4>
+		<input type="text" name="myinput"><br><br>
+
+		<input type="submit" name="btn_quote" value="GET A QUOTE">
+
+	</form>
+
+	<p>{{ content }}</p>
+</center>
+
+{% endblock %}	 -->

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<center>
+
+<h2>REQUEST A MOVIE</h2><br><br>
+
+<form>
+	NAME: <input type="text" name="name"><br><br>
+	MOVIE: <input type="text" name="movie"><br><br>
+
+	<input type="submit" name="submit" value="REQUEST MOVIE">
+
+</form>
+{% if usermovie %}
+
+<p>Your name is {{ username }}, movie is {{ usermovie }}</p>
+
+{% endif %}
+
+</center>
+
+{% endblock %}
