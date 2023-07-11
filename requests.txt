@@ -1,0 +1,1 @@
+'Request': ImmutableMultiDict([('myinput', 'hello'), ('btn_quote', 'GET A QUOTE')]), 'Type': <class 'werkzeug.datastructures.structures.ImmutableMultiDict'>
