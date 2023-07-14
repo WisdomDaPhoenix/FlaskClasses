@@ -1,1 +1,15 @@
-{"userdata": [{"firstname": "John", "lastname": "Doe", "status": "user"}, {"firstname": "Becky", "lastname": "Ann", "status": "admin"}]}
+{
+    "userdata":
+    [
+        {
+            "firstname": "John",
+            "lastname": "Doe",
+            "status": "user"
+        },
+        {
+            "firstname": "Becky",
+            "lastname": "Ann",
+            "status": "admin"
+        }
+    ]
+}

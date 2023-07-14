@@ -1,0 +1,5 @@
+secret="076ad3c8b6d8e58146aef78cdbedaf49df304149"
+
+deviceid = "00000000-0000-0000-d7e8-e8199f60b802"
+
+

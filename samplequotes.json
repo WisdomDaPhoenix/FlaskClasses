@@ -1,1 +1,130 @@
-{"quotesdata": [{"Author": "Dr Lloyd Magangeni", "Quote": "Cause channeled in the wrong direction is indistinguishable from handcap", "Category": "success-quotes"}, {"Author": "Dr Lloyd Magangeni", "Quote": "Some say sky is the limit but I say your assignment is the limit", "Category": "success-quotes"}, {"Author": "Dr Lloyd Magangeni", "Quote": "Success is the progressive discovery of your assignment", "Category": "success-quotes"}, {"Author": "Lailah Gifty Akita, Think Great: Be Great!", "Quote": "Believe in yourself, you can do great things!", "Category": "achievement qoutes"}, {"Author": "Lailah Gifty Akita, Pearls of  Wisdom: Great  mind", "Quote": "The quest for learning is the quest for self-discovery.", "Category": "achivement qoutes"}, {"Author": "Lailah Gifty Akita, Pearls of  Wisdom: Great  mind", "Quote": "Life gives us many test. We must graciously take each test!", "Category": "advice qoutes"}, {"Author": "Bluenscottish", "Quote": "On the journey to self discovery be grateful for the fools along the way. Their lack of kindness fueled your success ~bns", "Category": "self discovery qoutes"}, {"Author": "Ameya Agrawal, A Leap Within", "Quote": "It's success, which makes you beautiful.", "Category": "success qoutes"}, {"Author": "Auliq Ice", "Quote": "The greatest challenge in life is discovering who you are, The second greatest is being happy with what you find.", "Category": "challenge qoutes"}, {"Author": "Auliq Ice", "Quote": "Complaining solves nothing but creative problem solving amongst people with a common focus will produce solutions.", "Category": "problem solving qoutes"}, {"Author": "Auliq Ice", "Quote": "Stop rejecting that unique pathway that was designed exclusively for you. Embrace your destiny, respect yourself and love others.", "Category": "rejection qoutes"}, {"Author": "Auliq Ice", "Quote": "You can only give yourself a chance to find right things when you stop chasing wrong things.", "Category": "ambitional qoutes"}, {"Author": "Anitra Shelton-Quinn, Becoming Incredibly Irresistible: A Guide to Living the Abundant Life", "Quote": "You have immense power--power to overcome, power to achieve, power to possess, and power to prosper, making you incredibly irresistible.", "Category": "inspirirational qaoutes "}, {"Author": "Auliq Ice", "Quote": "Success is like a seed, it waits for the right conditions that will allow it to grow.", "Category": "success qoutes"}, {"Author": "Matshona Dhliwayo", "Quote": "Success is like a rainbow", "Category": "success qoutes"}, {"Author": " it foretells success. Diligence is a prophet", "Quote": "Hard work is a prophet", "Category": "hard work qoutes"}, {"Author": "Lailah Gifty Akita, Think Great: Be Great!", "Quote": "Desire to seek, desire to learn.", "Category": "seeking qoutes"}, {"Author": "Agona Apell, The Success Genome Unravelled: Turning Men from Rot to Rock", "Quote": "The quality of a man is to be judged not by what he drives but by what drives him", "Category": "ambitional qoutes"}, {"Author": "Auliq Ice", "Quote": "Every success and every bit of progress, is a building block for your next step.", "Category": "success qoutes"}, {"Author": "Auliq Ice", "Quote": "If you have the dedication, means and patience to treat your daily struggle, like a step towards success, something bigger will come your way.", "Category": "dedication qoutes"}, {"Author": "Anonymous", "Quote": "I Have Learned Why People Work So Hard To Succeed: It Is Because They Envy The Things Their Neighbors Have. But It Is Useless. It Is Like Chasing The Wind....It Is Better To Have Only A Little, With Peace Of Mind, Than Be Busy All The Time With Both Hands, Trying To Catch The Wind", "Category": "success qoutes"}, {"Author": "Vishwas Mudagal", "Quote": "When you fail, get hurt, feel bad, but act on it! Everybody fails, but the ones who act are the ones who change the world!", "Category": "failures that lead to success qoutes"}, {"Author": "Auliq Ice", "Quote": "To succeed means you to sail across some difficult courses.", "Category": "success qoutes"}, {"Author": "Auliq Ice", "Quote": "Becoming successful is a rough journey that carries pain and requires perseverance.", "Category": "success qoutes"}, {"Author": "Agona Apell, The Success Genome Unravelled: Turning Men from Rot to Rock", "Quote": "Faith is not mere belief but is that state you attain when you send your will, words, thoughts, beliefs, and actions into orbit around a chosen goal", "Category": "faith"}]}
+{
+    "quotesdata":
+    [
+        {
+            "Author": "Dr Lloyd Magangeni",
+            "Quote": "Cause channeled in the wrong direction is indistinguishable from handcap",
+            "Category": "success-quotes"
+        },
+        {
+            "Author": "Dr Lloyd Magangeni",
+            "Quote": "Some say sky is the limit but I say your assignment is the limit",
+            "Category": "success-quotes"
+        },
+        {
+            "Author": "Dr Lloyd Magangeni",
+            "Quote": "Success is the progressive discovery of your assignment",
+            "Category": "success-quotes"
+        },
+        {
+            "Author": "Lailah Gifty Akita, Think Great: Be Great!",
+            "Quote": "Believe in yourself, you can do great things!",
+            "Category": "achievement qoutes"
+        },
+        {
+            "Author": "Lailah Gifty Akita, Pearls of  Wisdom: Great  mind",
+            "Quote": "The quest for learning is the quest for self-discovery.",
+            "Category": "achivement qoutes"
+        },
+        {
+            "Author": "Lailah Gifty Akita, Pearls of  Wisdom: Great  mind",
+            "Quote": "Life gives us many test. We must graciously take each test!",
+            "Category": "advice qoutes"
+        },
+        {
+            "Author": "Bluenscottish",
+            "Quote": "On the journey to self discovery be grateful for the fools along the way. Their lack of kindness fueled your success ~bns",
+            "Category": "self discovery qoutes"
+        },
+        {
+            "Author": "Ameya Agrawal, A Leap Within",
+            "Quote": "It's success, which makes you beautiful.",
+            "Category": "success qoutes"
+        },
+        {
+            "Author": "Auliq Ice",
+            "Quote": "The greatest challenge in life is discovering who you are, The second greatest is being happy with what you find.",
+            "Category": "challenge qoutes"
+        },
+        {
+            "Author": "Auliq Ice",
+            "Quote": "Complaining solves nothing but creative problem solving amongst people with a common focus will produce solutions.",
+            "Category": "problem solving qoutes"
+        },
+        {
+            "Author": "Auliq Ice",
+            "Quote": "Stop rejecting that unique pathway that was designed exclusively for you. Embrace your destiny, respect yourself and love others.",
+            "Category": "rejection qoutes"
+        },
+        {
+            "Author": "Auliq Ice",
+            "Quote": "You can only give yourself a chance to find right things when you stop chasing wrong things.",
+            "Category": "ambitional qoutes"
+        },
+        {
+            "Author": "Anitra Shelton-Quinn, Becoming Incredibly Irresistible: A Guide to Living the Abundant Life",
+            "Quote": "You have immense power--power to overcome, power to achieve, power to possess, and power to prosper, making you incredibly irresistible.",
+            "Category": "inspirirational qaoutes "
+        },
+        {
+            "Author": "Auliq Ice",
+            "Quote": "Success is like a seed, it waits for the right conditions that will allow it to grow.",
+            "Category": "success qoutes"
+        },
+        {
+            "Author": "Matshona Dhliwayo",
+            "Quote": "Success is like a rainbow",
+            "Category": "success qoutes"
+        },
+        {
+            "Author": " it foretells success. Diligence is a prophet",
+            "Quote": "Hard work is a prophet",
+            "Category": "hard work qoutes"
+        },
+        {
+            "Author": "Lailah Gifty Akita, Think Great: Be Great!",
+            "Quote": "Desire to seek, desire to learn.",
+            "Category": "seeking qoutes"
+        },
+        {
+            "Author": "Agona Apell, The Success Genome Unravelled: Turning Men from Rot to Rock",
+            "Quote": "The quality of a man is to be judged not by what he drives but by what drives him",
+            "Category": "ambitional qoutes"
+        },
+        {
+            "Author": "Auliq Ice",
+            "Quote": "Every success and every bit of progress, is a building block for your next step.",
+            "Category": "success qoutes"
+        },
+        {
+            "Author": "Auliq Ice",
+            "Quote": "If you have the dedication, means and patience to treat your daily struggle, like a step towards success, something bigger will come your way.",
+            "Category": "dedication qoutes"
+        },
+        {
+            "Author": "Anonymous",
+            "Quote": "I Have Learned Why People Work So Hard To Succeed: It Is Because They Envy The Things Their Neighbors Have. But It Is Useless. It Is Like Chasing The Wind....It Is Better To Have Only A Little, With Peace Of Mind, Than Be Busy All The Time With Both Hands, Trying To Catch The Wind",
+            "Category": "success qoutes"
+        },
+        {
+            "Author": "Vishwas Mudagal",
+            "Quote": "When you fail, get hurt, feel bad, but act on it! Everybody fails, but the ones who act are the ones who change the world!",
+            "Category": "failures that lead to success qoutes"
+        },
+        {
+            "Author": "Auliq Ice",
+            "Quote": "To succeed means you to sail across some difficult courses.",
+            "Category": "success qoutes"
+        },
+        {
+            "Author": "Auliq Ice",
+            "Quote": "Becoming successful is a rough journey that carries pain and requires perseverance.",
+            "Category": "success qoutes"
+        },
+        {
+            "Author": "Agona Apell, The Success Genome Unravelled: Turning Men from Rot to Rock",
+            "Quote": "Faith is not mere belief but is that state you attain when you send your will, words, thoughts, beliefs, and actions into orbit around a chosen goal",
+            "Category": "faith"
+        }
+    ]
+}
